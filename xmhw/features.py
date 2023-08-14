@@ -58,7 +58,6 @@ def mhw_df(df):
     # calculate severity
     df["severity"] = t_seas / -(thresh_seas)
     # calculate categories
-    df["severity"] = t_seas / -(thresh_seas)
     df["cats"] = np.floor(1.0 + df.relThreshNorm)
     df["duration_moderate"] = df.cats == 1.0
     df["duration_strong"] = df.cats == 2.0
